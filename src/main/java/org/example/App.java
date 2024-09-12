@@ -15,7 +15,17 @@ public static void main(String [] args)
    carReference.doorCount=2;
    carReference.totalTravelDistance=0;
 
-   System.out.println("Propreties of car" + carReference.name);
+   Engine engine1= new Engine();
+
+
+   engine1.manufacturer="Ferrari";
+   engine1.capacity= 3000;
+
+    carReference.engine=engine1;
+ System.out.println("Engine capacity: "+engine1.capacity);
+
+
+    System.out.println("Propreties of car" + carReference.name);
    System.out.println("Max speed:" + carReference.maxSpeed);
    System.out.println("Fuel level:"+carReference.fuelLevel);
    System.out.println("Mileage:" +carReference.mileage);
@@ -42,6 +52,9 @@ public static void main(String [] args)
     System.out.println("Damage:" +car2.damaged);
     System.out.println("Total travel distance:" + car2.totalTravelDistance);
     System.out.println("Door count:" +car2.doorCount);
+
+    carReference.name="Audi";
+    System.out.println("Change name of car w" + carReference.name);
 
 
 }
